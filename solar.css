@@ -1,0 +1,166 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    margin: 0;
+}
+h1{
+    top: 30%;
+    color: yellow;
+   align-self: baseline;
+   text-transform: uppercase;
+   animation: head 4s infinite;
+
+}
+#sun {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+img {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#mer {
+    animation: merc  linear infinite;
+    animation-duration:  5s;
+
+    width: 25px;
+    height: 25px;
+}
+#ven {
+    width: 40px;
+    height: 30px;
+    animation: venu linear infinite;
+    animation-duration: 8s;
+    animation-direction: reverse;
+}
+
+#ear {
+    animation: earth linear infinite;
+    animation-duration: 10s;
+    width: 45px;
+    height: 45px;
+}
+
+#mar{
+    animation: ma linear infinite;
+    animation-duration: 11s;
+    width: 40px;
+    height: 40px;
+}
+
+#jup {
+    animation: jupi 12s linear infinite;
+    width: 90px;
+    height: 70px;
+}
+
+#sat {
+    animation: satu 13s linear infinite;
+    width: 65px;
+    height: 65px;
+}
+
+#ura {
+    animation: uran 14s linear infinite;
+    width: 60px;
+    height: 60px;
+}
+#nap{
+    animation: napt 15s linear infinite;
+    width: 60px;
+    height: 60px;
+}
+
+
+@keyframes merc {
+    from {
+        transform: rotate(0deg) translateX(90px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(90px) rotate(-360deg);
+    }
+}
+
+@keyframes venu {
+    from {
+        transform: rotate(0deg) translateX(120px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(120px) rotate(-360deg);
+    }
+}
+
+@keyframes earth {
+    from {
+        transform: rotate(0deg) translateX(180px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(180px) rotate(-360deg);
+    }
+}
+
+@keyframes ma{
+    from {
+        transform: rotate(0deg) translateX(230px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(230px) rotate(-360deg);
+    }
+}
+
+@keyframes jupi {
+    from {
+        transform: rotate(0deg) translateX(260px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(260px) rotate(-360deg);
+    }
+}
+
+@keyframes satu {
+    from {
+        transform: rotate(0deg) translateX(290px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(290px) rotate(-360deg);
+    }
+}
+
+@keyframes uran {
+    from {
+        transform: rotate(0deg) translateX(340px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(340px) rotate(-360deg);
+    }
+}
+
+@keyframes napt {
+    from {
+        transform: rotate(0deg) translateX(390px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(390px) rotate(-360deg);
+    }
+}
+@keyframes head {
+    0% {
+        filter: brightness(0);
+    }
+    50% {
+        filter: brightness(1);
+    }
+    100% {
+        filter: brightness(1.5);
+        color: purple;
+    }
+}
